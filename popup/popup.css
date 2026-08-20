@@ -1,0 +1,239 @@
+/* =========================
+   Base
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  min-height: 150px;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+/* =========================
+   Main Container
+========================= */
+
+.container {
+  width: 100%;
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 22px 24px 14px;
+
+  background: #ffffff;
+}
+
+/* =========================
+   Popup Layout
+========================= */
+
+.popup-flex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.flex {
+  flex: 1;
+}
+
+/* =========================
+   Icon
+========================= */
+
+.icon-container {
+  flex: 0 0 auto;
+
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0f7ff;
+  border-radius: 16px;
+
+  transition: transform 0.2s ease;
+}
+
+.icon-container:hover {
+  transform: scale(1.04);
+}
+
+.icon-container img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* =========================
+   Content
+========================= */
+
+.content-container {
+  min-width: 0;
+  margin: 0;
+
+  text-align: left;
+}
+
+.content-container h1 {
+  margin: 0;
+
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+
+  color: #111827;
+}
+
+.content-container::after {
+  content: "Remove distracting Outlook ads";
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 12px;
+  line-height: 1.4;
+  color: #6b7280;
+}
+
+/* =========================
+   Switch Container
+========================= */
+
+.switch-container {
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+}
+
+/* =========================
+   Toggle Switch
+========================= */
+
+.switch {
+  position: relative;
+
+  display: inline-block;
+
+  width: 52px;
+  height: 30px;
+}
+
+.switch input {
+  position: absolute;
+
+  width: 0;
+  height: 0;
+
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+
+  inset: 0;
+
+  cursor: pointer;
+
+  background-color: #d1d5db;
+
+  border-radius: 30px;
+
+  transition:
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.slider::before {
+  content: "";
+
+  position: absolute;
+
+  width: 22px;
+  height: 22px;
+
+  left: 4px;
+  top: 4px;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+
+  transition: transform 0.25s ease;
+}
+
+/* Checked */
+
+input:checked + .slider {
+  background-color: #2563eb;
+}
+
+input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
+/* Hover */
+
+.slider:hover {
+  background-color: #b8bec8;
+}
+
+input:checked + .slider:hover {
+  background-color: #1d4ed8;
+}
+
+/* Keyboard focus */
+
+input:focus-visible + .slider {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+  margin-top: 18px;
+  padding-top: 12px;
+
+  text-align: center;
+
+  border-top: 1px solid #eef0f4;
+}
+
+.footer small {
+  font-size: 11px;
+  font-weight: 500;
+
+  color: #9ca3af;
+}
