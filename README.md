@@ -9,19 +9,6 @@ Simple and yet useful extension that removes the ad element from the outlook mai
 
 ---
 
-## 📋 Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Installation](#installation)
-- [How It Works](#how-it-works)
-- [Usage](#usage)
-- [Browser Support](#browser-support)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## 📝 About
 
 **Un-Ad Outlook** is a lightweight browser extension designed to enhance your Outlook email experience by removing advertisements from the mail interface. By eliminating ads, the extension provides you with a cleaner, more spacious inbox view, allowing you to focus entirely on your emails without distractions.
